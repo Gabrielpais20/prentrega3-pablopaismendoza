@@ -1,0 +1,138 @@
+.galeria{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+.item{
+    height: 100px;
+    width: 100%;
+    border: 3px solid rgba(0, 128, 0, 0.404);
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: border-color 0.3s, transform 0.3s, filter 0.3s;
+}
+
+#snake{
+    background-image: url(../multimedia/img/snake-3979601_1280.jpg);
+  }
+  #snake2{
+    background-image: url(../multimedia/img/snake-6776201_1280.jpg);
+  }
+  #snake3{
+    background-image: url(../multimedia/img/snake-7711486_1280.jpg);
+  }
+  #snake4{
+    background-image: url(../multimedia/img/snakes-5046295_1280.jpg);
+  }
+  #snake5{
+    background-image: url(../multimedia/img/snake-419043_1280.jpg);
+  }
+  #snake6{
+    background-image: url(../multimedia/img/snake-7982631_1280.jpg);
+  }
+  #snake7{
+    background-image: url(../multimedia/img/snake-1010085_1280.jpg);
+  }
+  #snake8{
+    background-image: url(../multimedia/img/snake-5736084_1280.jpg);
+  }
+
+
+  #coco{
+    background-image: url(../multimedia/img/crocodile-348319_1280.jpg);
+  }
+  #coco2{
+    background-image: url(../multimedia/img/crocodile-389090_1280.jpg);
+  }
+  #coco3{
+    background-image: url(../multimedia/img/crocodile-5176851_1280.jpg);
+  }
+  #coco4{
+    background-image: url(../multimedia/img/crocodile-534020_1280.jpg);
+  }
+  #coco5{
+    background-image: url(../multimedia/img/crocodile-4918820_1280.jpg);
+  }
+  #coco6{
+    background-image: url(../multimedia/img/animals-2607645_1280.jpg);
+  }
+  #coco7{
+    background-image: url(../multimedia/img/crocodile-2254109_1280.jpg);
+  }
+  #coco8{
+    background-image: url(../multimedia/img/alligator-439887_1280.jpg);
+  }
+  #lyzard{
+    background-image: url(../multimedia/img/reptile-3087256_1280.jpg);
+  }
+  #lyzard2{
+    background-image: url(../multimedia/img/lizard-2732989_1280.jpg);
+  }
+  #lyzard3{
+    background-image: url(../multimedia/img/lizard-4763351_1280.jpg);
+  }
+  #lyzard4{
+    background-image: url(../multimedia/img/green-crested-lizard-5741470_1280.jpg);
+  }
+  #lyzard5{
+    background-image: url(../multimedia/img/chameleon-3056867_1280.jpg);
+  }
+  #lyzard6{
+    background-image: url(../multimedia/img/lizard-6072391_1280.jpg);
+  }
+  #lyzard7{
+    background-image: url(../multimedia/img/saurian-4033589_1280.jpg);
+  }
+  #lyzard8{
+    background-image: url(../multimedia/img/nature-4638198_1280.jpg);
+  }
+  #turtle{
+    background-image: url(../multimedia/img/turtle-243732_1280.jpg);
+  }
+  #turtle2{
+    background-image: url(../multimedia/img/tortoise-4141779_1280.jpg);
+  }
+  #turtle3{
+    background-image: url(../multimedia/img/trtoise-2647274_1280.jpg);
+  }
+  #turtle4{
+    background-image: url(../multimedia/img/animal-1039970_1280.jpg);
+  }
+  #turtle5{
+    background-image: url(../multimedia/img/turtle-7719912_1280.jpg);
+  }
+  #turtle6{
+    background-image: url(../multimedia/img/turtle-1958058_1280.jpg);
+  }
+  #turtle7{
+    background-image: url(../multimedia/img/tortoise-405801_1280.jpg);
+  }
+  #turtle8{
+    background-image: url(../multimedia/img/water-1446738_1280.jpg);
+  }
+
+
+
+  @media only screen and (min-width:480px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6,200px);
+    }
+    .item{
+        height: 160px;
+    }
+}
+
+@media only screen and (min-width:980px) {
+    .galeria{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+    
+}

@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: url(../multimedia/img/bearded-dragon-2787907_1280.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-position: center;
+  background-size: cover;
+}
+header .text-box {
+  width: 90%;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .text-box h1 {
+  font-size: 62px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+header .text-box h2 {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-links {
+  display: flex;
+}
+nav .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+nav .nav-links ul li {
+  padding: 8px 12px;
+  position: relative;
+}
+nav .nav-links ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 4px;
+  background-color: green;
+  transition: width 0.4s ease;
+}
+nav .nav-links ul li:hover:after {
+  width: 100%;
+}
+nav .nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  color: green;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+footer .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 10px;
+  }
+  .text-box {
+    margin-bottom: 10px;
+  }
+  nav {
+    display: flex;
+  }
+  .nav-links {
+    margin-top: 10px;
+  }
+  ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  form {
+    padding: 0 10px;
+  }
+  form .input-group {
+    margin-bottom: 15px;
+  }
+  form .input-group input,
+  form .input-group textarea {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .row-us {
+    flex-direction: column;
+  }
+  aside img {
+    height: 50%;
+  }
+}
+.galeria {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.item {
+  height: 100px;
+  width: 100%;
+  border: 3px solid rgba(0, 128, 0, 0.404);
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  transition: border-color 0.3s, transform 0.3s, filter 0.3s;
+}
+
+#snake {
+  background-image: url(../multimedia/img/snake-3979601_1280.jpg);
+}
+
+#snake2 {
+  background-image: url(../multimedia/img/snake-6776201_1280.jpg);
+}
+
+#snake3 {
+  background-image: url(../multimedia/img/snake-7711486_1280.jpg);
+}
+
+#snake4 {
+  background-image: url(../multimedia/img/snakes-5046295_1280.jpg);
+}
+
+#snake5 {
+  background-image: url(../multimedia/img/snake-419043_1280.jpg);
+}
+
+#snake6 {
+  background-image: url(../multimedia/img/snake-7982631_1280.jpg);
+}
+
+#snake7 {
+  background-image: url(../multimedia/img/snake-1010085_1280.jpg);
+}
+
+#snake8 {
+  background-image: url(../multimedia/img/snake-5736084_1280.jpg);
+}
+
+#coco {
+  background-image: url(../multimedia/img/crocodile-348319_1280.jpg);
+}
+
+#coco2 {
+  background-image: url(../multimedia/img/crocodile-389090_1280.jpg);
+}
+
+#coco3 {
+  background-image: url(../multimedia/img/crocodile-5176851_1280.jpg);
+}
+
+#coco4 {
+  background-image: url(../multimedia/img/crocodile-534020_1280.jpg);
+}
+
+#coco5 {
+  background-image: url(../multimedia/img/crocodile-4918820_1280.jpg);
+}
+
+#coco6 {
+  background-image: url(../multimedia/img/animals-2607645_1280.jpg);
+}
+
+#coco7 {
+  background-image: url(../multimedia/img/crocodile-2254109_1280.jpg);
+}
+
+#coco8 {
+  background-image: url(../multimedia/img/alligator-439887_1280.jpg);
+}
+
+#lyzard {
+  background-image: url(../multimedia/img/reptile-3087256_1280.jpg);
+}
+
+#lyzard2 {
+  background-image: url(../multimedia/img/lizard-2732989_1280.jpg);
+}
+
+#lyzard3 {
+  background-image: url(../multimedia/img/lizard-4763351_1280.jpg);
+}
+
+#lyzard4 {
+  background-image: url(../multimedia/img/green-crested-lizard-5741470_1280.jpg);
+}
+
+#lyzard5 {
+  background-image: url(../multimedia/img/chameleon-3056867_1280.jpg);
+}
+
+#lyzard6 {
+  background-image: url(../multimedia/img/lizard-6072391_1280.jpg);
+}
+
+#lyzard7 {
+  background-image: url(../multimedia/img/saurian-4033589_1280.jpg);
+}
+
+#lyzard8 {
+  background-image: url(../multimedia/img/nature-4638198_1280.jpg);
+}
+
+#turtle {
+  background-image: url(../multimedia/img/turtle-243732_1280.jpg);
+}
+
+#turtle2 {
+  background-image: url(../multimedia/img/tortoise-4141779_1280.jpg);
+}
+
+#turtle3 {
+  background-image: url(../multimedia/img/trtoise-2647274_1280.jpg);
+}
+
+#turtle4 {
+  background-image: url(../multimedia/img/animal-1039970_1280.jpg);
+}
+
+#turtle5 {
+  background-image: url(../multimedia/img/turtle-7719912_1280.jpg);
+}
+
+#turtle6 {
+  background-image: url(../multimedia/img/turtle-1958058_1280.jpg);
+}
+
+#turtle7 {
+  background-image: url(../multimedia/img/tortoise-405801_1280.jpg);
+}
+
+#turtle8 {
+  background-image: url(../multimedia/img/water-1446738_1280.jpg);
+}
+
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 200px);
+  }
+  .item {
+    height: 160px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+.click {
+  display: inline-block;
+  text-decoration: none;
+  color: aquamarine;
+  font-weight: 900;
+  border: 3px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+.click:hover {
+  border: 1px solid black;
+  background-color: aquamarine;
+  transition: 1s;
+  color: green;
+}
+
+.container {
+  background: linear-gradient(45deg, black, green);
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+.container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+.container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+.container .box-container .box img {
+  height: 80px;
+}
+.container .box-container .box h3 {
+  color: #444;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.container .box-container .box p {
+  color: gray;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.container .box-container .box .btn {
+  margin-top: 10px;
+  background: #333;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+.container .box-container .box .btn:hover {
+  letter-spacing: 1px;
+}
+.container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.course p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.course .row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course .course-col {
+  flex-basis: 31%;
+  background: salmon;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.course .course-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course .course-col:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus .campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus .campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forms form {
+  width: 90%;
+  max-width: 600px;
+}
+.forms form .input-group {
+  margin-bottom: 30px;
+}
+.forms form .input-group input,
+.forms form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid white;
+  background: transparent;
+  font-size: 15px;
+  color: white;
+}
+
+.item:hover {
+  border-color: red;
+  transform: scale(1.05);
+  filter: brightness(110%);
+}
+
+header .text-box {
+  width: 90%;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.row-us {
+  display: flex;
+  flex-wrap: wrap;
+  color: wheat;
+}
+.row-us aside {
+  flex: 30%;
+  height: 400px;
+  background-color: #333;
+  padding: 10px;
+}
+.row-us aside h5 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.row-us aside img {
+  width: 80%;
+  padding-bottom: 10px;
+}
+.row-us article {
+  flex: 70%;
+  background: linear-gradient(45deg, black, green);
+  padding-top: 30px;
+}
+.row-us article h2 {
+  font-size: 55px;
+}
+.row-us article .content {
+  padding: 20px;
+  font-weight: 900;
+}
+.row-us article .content img {
+  height: auto;
+  width: 80%;
+}
+.row-us article .content h5 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+nav .nav-links ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 5px;
+  background-color: green;
+  transition: width 0.4s ease;
+}
+
+nav .nav-links ul li:hover::after {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
